@@ -28,9 +28,8 @@ curl -O https://hyperledger.github.io/composer/v0.19/prereqs-ubuntu.sh
 chmod u+x prereqs-ubuntu.sh
 
 ### Install nodejs / Composer
-
+```
 npm install -g composer-cli@0.16
-
 npm install -g composer-rest-server@0.16
 npm install -g generator-hyperledger-composer@0.16
 npm install -g yo
