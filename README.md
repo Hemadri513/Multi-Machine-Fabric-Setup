@@ -75,7 +75,7 @@ After this continue on the first machine.
 ./createPeerAdminCard.sh
 nohup composer-playground -p 8181 &
 cd ..
-git clone https://github.com/InflatibleYoshi/blockchain-explorer
+git clone https://github.com/Hemadri513/BlockChain-Explorer.git
 sudo apt install postgresql postgresql-contrib
 cd blockchain-explorer
 git checkout release-3
