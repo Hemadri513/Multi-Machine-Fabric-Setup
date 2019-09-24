@@ -4,7 +4,7 @@ Ubuntu
 To run Hyperledger Composer and Hyperledger Fabric, we recommend you have at least 4Gb of memory.
 
 The following are prerequisites for installing the required development tools:
-
+```
 Operating Systems: Ubuntu Linux 14.04 / 16.04 LTS (both 64-bit), or Mac OS 10.12
 Docker Engine: Version 17.03 or higher
 Docker-Compose: Version 1.8 or higher
@@ -12,6 +12,8 @@ Node: 8.9 or higher (note version 9 is not supported)
 npm: v5.x
 git: 2.9.x or higher
 Python: 2.7.x
+```
+
 A code editor of your choice, we recommend VSCode.
 **If installing Hyperledger Composer using Linux, be aware of the following advice:
 
@@ -23,10 +25,12 @@ Do not use npm with sudo or su to root to use it.
 Avoid installing node globally as root.**
 
 If you're running on Ubuntu, you can download the prerequisites using the following commands:
+```
 curl -O https://hyperledger.github.io/composer/v0.19/prereqs-ubuntu.sh
 
 chmod u+x prereqs-ubuntu.sh
 
+```
 ### Install nodejs / Composer
 ```
 npm install -g composer-cli@0.16
@@ -35,8 +39,9 @@ npm install -g generator-hyperledger-composer@0.16
 npm install -g yo
 npm install -g composer-playground@0.16
 
-### Download the repo for Multi Org
 ```
+### Download the repo for Multi Org
+
 cd ~
 curl -sSL https://goo.gl/byy2Qj | bash -s 1.0.4
 mkdir fabric-binaries
@@ -53,12 +58,12 @@ cd ../..
 At this point, if you have done these instructions for one machine, either duplicate your VM at this time or prepare another environment with the same steps as described so far until you get to git cloning this repo. Instead of cloning the repo, scp -r the fabric-dev-servers-multipeer folder from the first machine to the second.
 
 On the first machine run
-```sh
+```
 ./startFabric.sh
 ```
 On the second machine run
 ```
-.startFabric-Peer2.sh
+./startFabric-Peer2.sh
 ```
 
 After this continue on the first machine.
