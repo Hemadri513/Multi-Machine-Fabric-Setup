@@ -53,7 +53,7 @@ cd ../..
 At this point, if you have done these instructions for one machine, either duplicate your VM at this time or prepare another environment with the same steps as described so far until you get to git cloning this repo. Instead of cloning the repo, scp -r the fabric-dev-servers-multipeer folder from the first machine to the second.
 
 On the first machine run
-```
+```sh
 ./startFabric.sh
 ```
 On the second machine run
