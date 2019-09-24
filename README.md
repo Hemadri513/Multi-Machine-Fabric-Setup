@@ -1,7 +1,7 @@
 # Multi Machine Fabric Setup
 
 Ubuntu
-To run Hyperledger Composer and Hyperledger Fabric, we recommend you have at least 4Gb of memory.
+To run Hyperledger Composer and Hyperledger Fabric, we recommend you have at least 6Gb of memory.
 
 The following are prerequisites for installing the required development tools:
 ```
@@ -15,6 +15,7 @@ Python: 2.7.x
 ```
 
 A code editor of your choice, we recommend VSCode.
+
 **If installing Hyperledger Composer using Linux, be aware of the following advice:
 
 Login as a normal user, rather than root.
@@ -25,6 +26,7 @@ Do not use npm with sudo or su to root to use it.
 Avoid installing node globally as root.**
 
 If you're running on Ubuntu, you can download the prerequisites using the following commands:
+
 ```
 curl -O https://hyperledger.github.io/composer/v0.19/prereqs-ubuntu.sh
 
@@ -41,7 +43,7 @@ npm install -g composer-playground@0.16
 
 ```
 ### Download the repo for Multi Org
-
+```
 cd ~
 curl -sSL https://goo.gl/byy2Qj | bash -s 1.0.4
 mkdir fabric-binaries
