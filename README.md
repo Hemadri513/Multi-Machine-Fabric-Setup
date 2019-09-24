@@ -33,6 +33,14 @@ curl -O https://hyperledger.github.io/composer/v0.19/prereqs-ubuntu.sh
 chmod u+x prereqs-ubuntu.sh
 
 ```
+Next run the script - as this briefly uses sudo during its execution, you will be prompted for your password.
+```
+./prereqs-ubuntu.sh
+
+```
+Congratulations, the installation of the pre-requisites for Hyperledger Composer is complete!
+You can now proceed with Installing the development environment.
+
 ### Install nodejs / Composer
 ```
 npm install -g composer-cli@0.16
